@@ -9,7 +9,6 @@ object MockTransactions {
     fun previewTransactions(): TransactionsPerSecond {
         return TransactionsPerSecond(
             maxTransaction = 100.00,
-            minTransaction = 1.00,
             transactions = listOf(
                 TransactionRate(
                     timeStamp = 0.0,

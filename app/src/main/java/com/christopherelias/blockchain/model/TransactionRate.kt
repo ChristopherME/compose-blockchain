@@ -23,6 +23,5 @@ data class TransactionRate(
  */
 data class TransactionsPerSecond(
     val maxTransaction: Double,
-    val minTransaction: Double,
     val transactions: List<TransactionRate>
 )
