@@ -2,8 +2,8 @@ package com.christopherelias.blockchain.features.home.mapper
 
 import com.christopherelias.blockchain.di.DefaultDispatcher
 import com.christopherelias.blockchain.features.home.data_source.model.TransactionPerSecondResponse
-import com.christopherelias.blockchain.ui.model.TransactionRate
-import com.christopherelias.blockchain.ui.model.TransactionsPerSecond
+import com.christopherelias.blockchain.ui.models.TransactionRate
+import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

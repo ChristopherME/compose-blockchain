@@ -5,7 +5,7 @@ import com.christopherelias.blockchain.core.functional_programming.Failure
 import com.christopherelias.blockchain.features.home.data.data_source.HomeRemoteDataSource
 import com.christopherelias.blockchain.features.home.domain.repository.HomeRepository
 import com.christopherelias.blockchain.features.home.mapper.TransactionMapper
-import com.christopherelias.blockchain.ui.model.TransactionsPerSecond
+import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
 import javax.inject.Inject
 
 /*

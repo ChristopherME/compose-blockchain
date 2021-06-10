@@ -2,7 +2,7 @@ package com.christopherelias.blockchain.features.home.domain.repository
 
 import com.christopherelias.blockchain.core.functional_programming.Either
 import com.christopherelias.blockchain.core.functional_programming.Failure
-import com.christopherelias.blockchain.ui.model.TransactionsPerSecond
+import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
 
 /*
  * Created by Christopher Elias on 9/06/2021

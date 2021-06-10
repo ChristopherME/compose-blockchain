@@ -1,11 +1,18 @@
 package com.christopherelias.blockchain.ui.components
 
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.material.Card
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
-import com.christopherelias.blockchain.ui.model.TransactionsPerSecond
+import androidx.compose.ui.unit.dp
+import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
 import timber.log.Timber
 
 /*
@@ -14,6 +21,25 @@ import timber.log.Timber
  *
  * Lima, Peru.
  */
+
+@Composable
+fun TransactionsPerSecondComposable(
+    transactionsPerSecond: TransactionsPerSecond
+) {
+    Timber.d("render #TransactionsPerSecondComposable")
+    Card {
+        Column {
+            Text(text = "Transactions Per Second")
+            LinearTransactionsChart(
+                modifier = Modifier
+                    .height(350.dp)
+                    .fillMaxWidth()
+                    .background(Color.Blue),
+                transactionsPerSecond = transactionsPerSecond
+            )
+        }
+    }
+}
 
 @Composable
 fun LinearTransactionsChart(

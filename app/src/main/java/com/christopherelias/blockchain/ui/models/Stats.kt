@@ -1,4 +1,4 @@
-package com.christopherelias.blockchain.ui.model
+package com.christopherelias.blockchain.ui.models
 
 /*
  * Created by Christopher Elias on 9/06/2021
