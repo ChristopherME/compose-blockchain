@@ -1,6 +1,7 @@
 package com.christopherelias.blockchain.core.network
 
 import okhttp3.OkHttpClient
+import javax.inject.Inject
 
 /*
  * Created by Christopher Elias on 9/06/2021
@@ -10,7 +11,7 @@ import okhttp3.OkHttpClient
  */
 
 // Add this class as internal when modularize the project.
-class HttpClientFactory {
+class HttpClientFactory @Inject constructor() {
 
     private val httpClient by lazy {
 
