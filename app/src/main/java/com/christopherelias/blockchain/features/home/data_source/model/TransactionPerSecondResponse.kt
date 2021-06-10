@@ -10,6 +10,6 @@ import com.squareup.moshi.Json
  */
 
 data class TransactionPerSecondResponse(
-    @field:Json(name = "x") val timeStamp: Double,
+    @field:Json(name = "x") val timeStamp: Long,
     @field:Json(name = "y") val transactionsPerSecondValue: Double
 )

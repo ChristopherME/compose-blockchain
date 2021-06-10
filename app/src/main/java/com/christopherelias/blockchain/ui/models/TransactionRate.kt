@@ -9,11 +9,11 @@ package com.christopherelias.blockchain.ui.models
 
 /**
  * Represents a transaction per day object.
- * @param timeStamp the time stamp of the transaction. We have to convert this to date at some point.
+ * @param timeStamp the time stamp of the transaction. TODO: We have to convert this to date at some point.
  * @param transactionsPerSecondValue the quantity of transactions made per day.
  */
 data class TransactionRate(
-    val timeStamp: Double,
+    val timeStamp: Long,
     val transactionsPerSecondValue: Double
 )
 
