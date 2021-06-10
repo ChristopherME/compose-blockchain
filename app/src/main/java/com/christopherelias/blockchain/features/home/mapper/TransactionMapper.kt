@@ -1,7 +1,7 @@
 package com.christopherelias.blockchain.features.home.mapper
 
 import com.christopherelias.blockchain.features.home.data_source.model.TransactionPerSecondResponse
-import com.christopherelias.blockchain.model.TransactionsPerSecond
+import com.christopherelias.blockchain.ui.model.TransactionsPerSecond
 
 
 /*
