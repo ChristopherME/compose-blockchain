@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Blockchain</string>
+    <string name="error_no_network_detected">No internet connection found. Check that you are connected to a WIFI network or have your data turned on.</string>
 </resources>
