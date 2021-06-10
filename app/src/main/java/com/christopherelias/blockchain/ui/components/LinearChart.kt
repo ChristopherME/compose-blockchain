@@ -1,11 +1,11 @@
-package com.christopherelias.blockchain.components
+package com.christopherelias.blockchain.ui.components
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
-import com.christopherelias.blockchain.model.TransactionsPerSecond
+import com.christopherelias.blockchain.ui.model.TransactionsPerSecond
 import timber.log.Timber
 
 /*
