@@ -6,6 +6,7 @@ package com.christopherelias.blockchain
  *
  * Lima, Peru.
  */
-// TODO
-class HomeRepositoryUnitTests {
+
+class HomeRepositoryUnitTest {
+
 }
