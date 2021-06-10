@@ -6,6 +6,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import com.christopherelias.blockchain.model.TransactionsPerSecond
+import timber.log.Timber
 
 /*
  * Created by Christopher Elias on 9/06/2021
@@ -19,6 +20,9 @@ fun LinearTransactionsChart(
     modifier: Modifier = Modifier,
     transactionsPerSecond: TransactionsPerSecond
 ) {
+    if (transactionsPerSecond.transactions.isEmpty()) return
+
+    Timber.d("render #LinearTransactionsChart")
     Canvas(modifier = modifier) {
         // Total number of transactions.
         val totalRecords = transactionsPerSecond.transactions.size
