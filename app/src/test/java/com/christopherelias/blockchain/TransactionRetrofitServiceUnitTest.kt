@@ -1,6 +1,6 @@
 package com.christopherelias.blockchain
 
-import com.christopherelias.blockchain.features.home.data_source.remote.TransactionsService
+import com.christopherelias.blockchain.features.home.data_source.remote.HomeService
 import com.christopherelias.blockchain.utils.FileReaderUtil
 import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.Dispatcher
@@ -30,7 +30,7 @@ class TransactionRetrofitServiceUnitTest {
 
     // Mock web server
     private val mockWebServer = MockWebServer()
-    private lateinit var transactionService: TransactionsService
+    private lateinit var transactionService: HomeService
 
     @Before
     fun setUp() {
@@ -67,7 +67,7 @@ class TransactionRetrofitServiceUnitTest {
             .addConverterFactory(MoshiConverterFactory.create())
             .baseUrl(mockWebServer.url("/"))
             .build()
-            .create(TransactionsService::class.java)
+            .create(HomeService::class.java)
     }
 
     private fun setUpMockWebServerDispatcher(): Dispatcher = object : Dispatcher() {

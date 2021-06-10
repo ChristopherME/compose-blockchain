@@ -6,7 +6,7 @@ import com.christopherelias.blockchain.core.network.middleware.provider.Middlewa
 import com.christopherelias.blockchain.core.network.models.ResponseError
 import com.christopherelias.blockchain.core.network.utils.call
 import com.christopherelias.blockchain.di.IoDispatcher
-import com.christopherelias.blockchain.features.home.data.data_source.TransactionsRemoteDataSource
+import com.christopherelias.blockchain.features.home.data.data_source.HomeRemoteDataSource
 import com.christopherelias.blockchain.features.home.data_source.model.TransactionPerSecondResponse
 import com.squareup.moshi.JsonAdapter
 import kotlinx.coroutines.CoroutineDispatcher
@@ -19,12 +19,12 @@ import javax.inject.Inject
  * Lima, Peru.
  */
 
-class TransactionsRemoteDataSourceImpl @Inject constructor(
+class HomeRemoteDataSourceImpl @Inject constructor(
     private val middlewareProvider: MiddlewareProvider,
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
     private val errorAdapter: JsonAdapter<ResponseError>,
-    private val transactionsService: TransactionsService
-) : TransactionsRemoteDataSource {
+    private val homeService: HomeService
+) : HomeRemoteDataSource {
 
     override suspend fun getTransactionsPerSecond(): Either<Failure, List<TransactionPerSecondResponse>> {
         return call(
@@ -32,7 +32,7 @@ class TransactionsRemoteDataSourceImpl @Inject constructor(
             ioDispatcher = ioDispatcher,
             adapter = errorAdapter,
             retrofitCall = {
-                transactionsService.getTransactionsPerSecond(
+                homeService.getTransactionsPerSecond(
                     chartName = "transactions-per-second",
                     timeSpan = "5weeks",
                     rollingAverage = "8hours"

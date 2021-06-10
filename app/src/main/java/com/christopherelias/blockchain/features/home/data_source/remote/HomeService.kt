@@ -13,7 +13,7 @@ import retrofit2.http.Query
  * Lima, Peru.
  */
 
-interface TransactionsService {
+interface HomeService {
 
     @GET("charts/{chartName}")
     suspend fun getTransactionsPerSecond(

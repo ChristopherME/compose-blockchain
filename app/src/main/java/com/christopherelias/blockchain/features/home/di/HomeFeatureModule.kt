@@ -1,8 +1,8 @@
 package com.christopherelias.blockchain.features.home.di
 
-import com.christopherelias.blockchain.features.home.data.data_source.TransactionsRemoteDataSource
+import com.christopherelias.blockchain.features.home.data.data_source.HomeRemoteDataSource
 import com.christopherelias.blockchain.features.home.data.repository.HomeRepositoryImpl
-import com.christopherelias.blockchain.features.home.data_source.remote.TransactionsRemoteDataSourceImpl
+import com.christopherelias.blockchain.features.home.data_source.remote.HomeRemoteDataSourceImpl
 import com.christopherelias.blockchain.features.home.domain.repository.HomeRepository
 import com.christopherelias.blockchain.features.home.mapper.TransactionMapper
 import com.christopherelias.blockchain.features.home.mapper.TransactionMapperImpl
@@ -23,9 +23,9 @@ import dagger.hilt.android.components.ViewModelComponent
 abstract class HomeFeatureModule {
 
     @Binds
-    internal abstract fun provideTransactionsRemoteDataSource(
-        transactionsRemoteDataSourceImpl: TransactionsRemoteDataSourceImpl
-    ): TransactionsRemoteDataSource
+    internal abstract fun provideHomeRemoteDataSource(
+        homeRemoteDataSourceImpl: HomeRemoteDataSourceImpl
+    ): HomeRemoteDataSource
 
     @Binds
     internal abstract fun provideTransactionMapper(

@@ -11,7 +11,7 @@ import com.christopherelias.blockchain.features.home.data_source.model.Transacti
  * Lima, Peru.
  */
 
-interface TransactionsRemoteDataSource {
+interface HomeRemoteDataSource {
 
     suspend fun getTransactionsPerSecond(): Either<Failure, List<TransactionPerSecondResponse>>
 }

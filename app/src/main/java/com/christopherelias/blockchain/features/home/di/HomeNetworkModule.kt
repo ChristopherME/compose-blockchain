@@ -1,6 +1,6 @@
 package com.christopherelias.blockchain.features.home.di
 
-import com.christopherelias.blockchain.features.home.data_source.remote.TransactionsService
+import com.christopherelias.blockchain.features.home.data_source.remote.HomeService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -21,5 +21,5 @@ internal class HomeNetworkModule {
     @Provides
     internal fun provideTransactionService(
         retrofit: Retrofit
-    ): TransactionsService = retrofit.create(TransactionsService::class.java)
+    ): HomeService = retrofit.create(HomeService::class.java)
 }
