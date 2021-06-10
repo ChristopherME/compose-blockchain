@@ -1,19 +1,22 @@
 package com.christopherelias.blockchain.ui.components
 
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
-import timber.log.Timber
 
 /*
  * Created by Christopher Elias on 9/06/2021
@@ -24,17 +27,29 @@ import timber.log.Timber
 
 @Composable
 fun TransactionsPerSecondComposable(
-    transactionsPerSecond: TransactionsPerSecond
+    transactionsPerSecond: TransactionsPerSecond,
 ) {
-    Timber.d("render #TransactionsPerSecondComposable")
-    Card {
+    Card(
+        shape = RoundedCornerShape(4.dp),
+        elevation = 12.dp,
+        modifier = Modifier
+            .padding(12.dp)
+            .fillMaxWidth()
+    ) {
         Column {
-            Text(text = "Transactions Per Second")
+            Text(
+                text = "Transactions Per Second",
+                style = MaterialTheme.typography.h6,
+                textAlign = TextAlign.Center,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(12.dp)
+            )
             LinearTransactionsChart(
                 modifier = Modifier
-                    .height(350.dp)
+                    .height(250.dp)
                     .fillMaxWidth()
-                    .background(Color.Blue),
+                    .padding(12.dp),
                 transactionsPerSecond = transactionsPerSecond
             )
         }
@@ -48,7 +63,6 @@ fun LinearTransactionsChart(
 ) {
     if (transactionsPerSecond.transactions.isEmpty()) return
 
-    Timber.d("render #LinearTransactionsChart")
     Canvas(modifier = modifier) {
         // Total number of transactions.
         val totalRecords = transactionsPerSecond.transactions.size
@@ -81,7 +95,8 @@ fun LinearTransactionsChart(
                             canvasHeight = cHeight
                         )
                     ),
-                    color = Color(0xFFFFFFFF)
+                    color = Color(40, 193, 218),
+                    strokeWidth = Stroke.DefaultMiter
                 )
             }
             currentLineDistance += lineDistance
