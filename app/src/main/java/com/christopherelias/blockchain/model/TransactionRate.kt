@@ -24,4 +24,10 @@ data class TransactionRate(
 data class TransactionsPerSecond(
     val maxTransaction: Double,
     val transactions: List<TransactionRate>
-)
+) {
+    companion object {
+        fun idle(): TransactionsPerSecond {
+            return TransactionsPerSecond(0.0, emptyList())
+        }
+    }
+}
