@@ -1,8 +1,7 @@
-package com.christopherelias.blockchain
+package com.christopherelias.blockchain.utils
 
 import com.christopherelias.blockchain.core.network.models.ResponseList
 import com.christopherelias.blockchain.features.home.data_source.model.TransactionPerSecondResponse
-import com.christopherelias.blockchain.utils.FileReaderUtil
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
