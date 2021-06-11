@@ -13,7 +13,7 @@ object DefaultConfig {
 
 object Core {
     val network = ":core:network"
-    val navigation = ":core:navigation"
+    val functionalProgramming = ":core:functional-programming"
 }
 
 object Versions {

@@ -1,7 +1,7 @@
 package com.christopherelias.blockchain.features.home.data_source.remote
 
-import com.christopherelias.blockchain.core.functional_programming.Either
-import com.christopherelias.blockchain.core.functional_programming.Failure
+import com.christopherelias.blockchain.functional_programming.Either
+import com.christopherelias.blockchain.functional_programming.Failure
 import com.christopherelias.blockchain.core.network.middleware.provider.MiddlewareProvider
 import com.christopherelias.blockchain.core.network.models.ResponseError
 import com.christopherelias.blockchain.core.network.utils.call

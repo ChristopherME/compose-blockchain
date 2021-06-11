@@ -1,6 +1,6 @@
 package com.christopherelias.blockchain.core.network.models
 
-import com.christopherelias.blockchain.core.functional_programming.Failure
+import com.christopherelias.blockchain.functional_programming.Failure
 
 /*
  * Created by Christopher Elias on 9/06/2021

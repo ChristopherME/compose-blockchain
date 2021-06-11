@@ -1,6 +1,6 @@
 package com.christopherelias.blockchain.utils
 
-import com.christopherelias.blockchain.core.functional_programming.Either
+import com.christopherelias.blockchain.functional_programming.Either
 
 /*
  * Created by Christopher Elias on 10/06/2021

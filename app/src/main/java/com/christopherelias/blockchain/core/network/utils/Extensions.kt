@@ -1,9 +1,9 @@
 package com.christopherelias.blockchain.core.network.utils
 
-import com.christopherelias.blockchain.core.functional_programming.Either
-import com.christopherelias.blockchain.core.functional_programming.Failure
-import com.christopherelias.blockchain.core.functional_programming.utils.toError
-import com.christopherelias.blockchain.core.functional_programming.utils.toSuccess
+import com.christopherelias.blockchain.functional_programming.Either
+import com.christopherelias.blockchain.functional_programming.Failure
+import com.christopherelias.blockchain.functional_programming.utils.toError
+import com.christopherelias.blockchain.functional_programming.utils.toSuccess
 import com.christopherelias.blockchain.core.network.middleware.NetworkMiddleware
 import com.christopherelias.blockchain.core.network.models.*
 import com.squareup.moshi.JsonAdapter

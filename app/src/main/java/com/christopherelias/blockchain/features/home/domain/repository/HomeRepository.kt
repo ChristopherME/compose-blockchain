@@ -1,7 +1,7 @@
 package com.christopherelias.blockchain.features.home.domain.repository
 
-import com.christopherelias.blockchain.core.functional_programming.Either
-import com.christopherelias.blockchain.core.functional_programming.Failure
+import com.christopherelias.blockchain.functional_programming.Either
+import com.christopherelias.blockchain.functional_programming.Failure
 import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
 
 /*

@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.christopherelias.blockchain.core.functional_programming.Failure
+import com.christopherelias.blockchain.functional_programming.Failure
 import com.christopherelias.blockchain.features.home.domain.repository.HomeRepository
 import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
 import com.christopherelias.blockchain.utils.OneTimeEvent

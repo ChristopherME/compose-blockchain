@@ -46,6 +46,8 @@ android {
 
 dependencies {
 
+    implementation project(Core.functionalProgramming)
+
     implementation Libs.androidXCore
     implementation Libs.androidXAppCompat
     implementation Libs.googleMaterial
