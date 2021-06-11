@@ -1,6 +1,7 @@
-package com.christopherelias.blockchain.utils.resource_provider
+package com.christopherelias.blockchain.utils_impl.resource_provider
 
 import android.content.Context
+import com.christopherelias.blockchain.utils.resource_provider.ResourceProvider
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 

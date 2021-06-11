@@ -16,6 +16,10 @@ object Core {
     val functionalProgramming = ":core:functional-programming"
 }
 
+object Modules {
+    val utils = ":utils"
+}
+
 object Versions {
     const val KOTLIN_VERSION = "1.5.10"
     const val COROUTINES_VERSION = "1.5.0"

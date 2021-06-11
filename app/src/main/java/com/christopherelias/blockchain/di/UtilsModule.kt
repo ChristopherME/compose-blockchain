@@ -1,9 +1,9 @@
 package com.christopherelias.blockchain.di
 
 import com.christopherelias.blockchain.utils.connectivity.ConnectivityUtils
-import com.christopherelias.blockchain.utils.connectivity.ConnectivityUtilsImpl
 import com.christopherelias.blockchain.utils.resource_provider.ResourceProvider
-import com.christopherelias.blockchain.utils.resource_provider.ResourceProviderImpl
+import com.christopherelias.blockchain.utils_impl.connectivity.ConnectivityUtilsImpl
+import com.christopherelias.blockchain.utils_impl.resource_provider.ResourceProviderImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

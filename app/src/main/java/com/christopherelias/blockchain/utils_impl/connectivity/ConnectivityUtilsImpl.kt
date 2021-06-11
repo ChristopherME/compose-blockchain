@@ -1,9 +1,10 @@
-package com.christopherelias.blockchain.utils.connectivity
+package com.christopherelias.blockchain.utils_impl.connectivity
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
+import com.christopherelias.blockchain.utils.connectivity.ConnectivityUtils
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
