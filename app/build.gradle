@@ -47,6 +47,7 @@ android {
 dependencies {
 
     implementation project(Core.functionalProgramming)
+    implementation project(Core.network)
 
     implementation Libs.androidXCore
     implementation Libs.androidXAppCompat

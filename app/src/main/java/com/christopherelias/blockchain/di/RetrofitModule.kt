@@ -1,7 +1,6 @@
 package com.christopherelias.blockchain.di
 
 import com.christopherelias.blockchain.BuildConfig
-import com.christopherelias.blockchain.core.network.HttpClientFactory
 import com.christopherelias.blockchain.core.network.models.ResponseError
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
@@ -14,6 +13,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.util.concurrent.TimeUnit
+import javax.inject.Inject
 import javax.inject.Singleton
 
 /*
@@ -53,7 +53,7 @@ object RetrofitModule {
     }
 
 
-    // TODO : Add BuildConfig for change this.
+    // TODO : Add BASE_URL in BuildConfig and change this...
     @Provides
     @Singleton
     fun provideRetrofitBuilder(
@@ -75,5 +75,14 @@ object RetrofitModule {
     @Provides
     fun provideJsonErrorAdapter(moshi: Moshi): JsonAdapter<ResponseError> {
         return moshi.adapter(ResponseError::class.java)
+    }
+}
+
+internal class HttpClientFactory @Inject constructor() {
+
+    private val httpClient by lazy { OkHttpClient() }
+
+    fun create(): OkHttpClient.Builder {
+        return httpClient.newBuilder()
     }
 }

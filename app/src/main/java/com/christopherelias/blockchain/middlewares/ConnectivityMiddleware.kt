@@ -2,7 +2,7 @@ package com.christopherelias.blockchain.middlewares
 
 import com.christopherelias.blockchain.R
 import com.christopherelias.blockchain.core.network.middleware.NetworkMiddleware
-import com.christopherelias.blockchain.core.network.models.NetworkMiddlewareFailure
+import com.christopherelias.blockchain.core.network.middleware.NetworkMiddlewareFailure
 import com.christopherelias.blockchain.utils.connectivity.ConnectivityUtils
 import com.christopherelias.blockchain.utils.resource_provider.ResourceProvider
 import javax.inject.Inject

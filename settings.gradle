@@ -3,9 +3,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "Blockchain"
 include ':app'
 include ':core:functional-programming'
+include ':core:network'

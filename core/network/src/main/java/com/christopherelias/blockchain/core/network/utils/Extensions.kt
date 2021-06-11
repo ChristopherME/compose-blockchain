@@ -1,11 +1,11 @@
 package com.christopherelias.blockchain.core.network.utils
 
+import com.christopherelias.blockchain.core.network.middleware.NetworkMiddleware
+import com.christopherelias.blockchain.core.network.models.ResponseError
 import com.christopherelias.blockchain.functional_programming.Either
 import com.christopherelias.blockchain.functional_programming.Failure
 import com.christopherelias.blockchain.functional_programming.utils.toError
 import com.christopherelias.blockchain.functional_programming.utils.toSuccess
-import com.christopherelias.blockchain.core.network.middleware.NetworkMiddleware
-import com.christopherelias.blockchain.core.network.models.*
 import com.squareup.moshi.JsonAdapter
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
@@ -16,7 +16,7 @@ import javax.net.ssl.SSLException
 import javax.net.ssl.SSLHandshakeException
 
 /*
- * Created by Christopher Elias on 9/06/2021
+ * Created by Christopher Elias on 11/06/2021
  * christopher.mike.96@gmail.com
  *
  * Lima, Peru.
@@ -104,3 +104,17 @@ private fun JsonAdapter<ResponseError>.parseError(
         null
     }
 }
+
+object TimeOut : Failure.CustomFailure()
+
+object NetworkConnectionLostSuddenly : Failure.CustomFailure()
+
+object SSLError : Failure.CustomFailure()
+
+/**
+ * If your service return some custom error use this with the given attributes you expect.
+ */
+data class ServiceBodyFailure(
+    val internalStatus: String,
+    val internalMessage: String?
+) : Failure.CustomFailure()

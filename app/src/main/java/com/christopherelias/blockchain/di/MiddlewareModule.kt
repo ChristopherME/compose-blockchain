@@ -1,7 +1,7 @@
 package com.christopherelias.blockchain.di
 
 import com.christopherelias.blockchain.core.network.middleware.provider.MiddlewareProvider
-import com.christopherelias.blockchain.core.network.middleware.provider.MiddlewareProviderImpl
+import com.christopherelias.blockchain.middlewares.MiddlewareProviderImpl
 import com.christopherelias.blockchain.middlewares.ConnectivityMiddleware
 import dagger.Module
 import dagger.Provides

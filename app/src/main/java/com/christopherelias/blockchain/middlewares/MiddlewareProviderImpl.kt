@@ -1,6 +1,7 @@
-package com.christopherelias.blockchain.core.network.middleware.provider
+package com.christopherelias.blockchain.middlewares
 
 import com.christopherelias.blockchain.core.network.middleware.NetworkMiddleware
+import com.christopherelias.blockchain.core.network.middleware.provider.MiddlewareProvider
 
 /*
  * Created by Christopher Elias on 9/06/2021
