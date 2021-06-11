@@ -18,6 +18,7 @@ This project is monolithic(for now) and has only one screen. However, all inner 
 - :middlewares has middlewares that going to act as a firewall before executing any retrofit call. Only if all the middlewares are supplied then the retrofit call is allowed to be executed.
 - :features:home Home is our only feature, it has it's data sources & repositories interfaces for prepare the data and send it to the view model.
 - :ui:components: contains our composables.
+- :tests unit tests for repository, datasources, mappers using [mockk](https://github.com/mockk/mockk) & [JUnit4](https://junit.org/junit4/)
 - app HiltApplication in charge to create the app DI graph.
 
 ## Development setup
