@@ -3,7 +3,7 @@ package com.christopherelias.blockchain
 import com.christopherelias.blockchain.core.network.middleware.provider.MiddlewareProvider
 import com.christopherelias.blockchain.core.network.models.ResponseError
 import com.christopherelias.blockchain.core.network.models.ResponseList
-import com.christopherelias.blockchain.core.network.models.ServiceBodyFailure
+import com.christopherelias.blockchain.core.network.utils.ServiceBodyFailure
 import com.christopherelias.blockchain.features.home.data.data_source.HomeRemoteDataSource
 import com.christopherelias.blockchain.features.home.data.repository.HomeRepositoryImpl
 import com.christopherelias.blockchain.features.home.data_source.model.TransactionPerSecondResponse
