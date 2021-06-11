@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import com.christopherelias.blockchain.ui.models.Stats
 
 /*
@@ -74,6 +75,8 @@ fun StatsCardItem(
             Text(
                 text = content,
                 style = MaterialTheme.typography.h6,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
                 color = Color(40, 193, 218),
                 modifier = Modifier.padding(6.dp)
             )
@@ -95,7 +98,7 @@ fun StatCardPreview() {
         stats = listOf(
             Stats(
                 "Market Price",
-                "$36,980.20",
+                "$36,980.2000000000000000",
                 "The avarage USD market price acorss major bitcoin exchanges"
             ),
             Stats(
