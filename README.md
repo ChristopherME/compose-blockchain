@@ -5,6 +5,9 @@ The graph is made with [whimsical](https://whimsical.com).
 
 ![GitHub Cards Preview](https://github.com/ChristopherME/Blockchain/blob/master/art/blockchain_app_architecture_diagram.png)
 
+## App Screenshot v0.0.1
+![GitHub Cards Preview](https://github.com/ChristopherME/Blockchain/blob/master/art/screenshot.jpg)
+
 ## Tech Stack
 
 This project is monolithic(for now) and has only one screen. However, all inner packages are well organized in order to be scalable and modularized in the following days. It uses MVVM as Software Design Patter and is using Jetpack Compose for the UI.

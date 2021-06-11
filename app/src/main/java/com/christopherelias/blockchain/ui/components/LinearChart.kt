@@ -26,6 +26,23 @@ import com.christopherelias.blockchain.ui.models.TransactionsPerSecond
  */
 
 @Composable
+fun CurrencyStatistics(
+    transactionsPerSecond: TransactionsPerSecond
+) {
+    Column {
+        Text(
+            text = "Currency Statistics",
+            style = MaterialTheme.typography.h4,
+            textAlign = TextAlign.Start,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp)
+        )
+        TransactionsPerSecondComposable(transactionsPerSecond = transactionsPerSecond)
+    }
+}
+
+@Composable
 fun TransactionsPerSecondComposable(
     transactionsPerSecond: TransactionsPerSecond,
 ) {
