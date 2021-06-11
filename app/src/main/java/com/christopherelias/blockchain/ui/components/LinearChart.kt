@@ -94,7 +94,7 @@ fun LinearTransactionsChart(
         var currentLineDistance = 0F + lineDistance
 
         transactionsPerSecond.transactions.forEachIndexed { index, transactionRate ->
-            if (transactionsPerSecond.transactions.getOrNull(index = index + 1) != null) {
+            if (totalRecords >= index + 2) {
                 drawLine(
                     start = Offset(
                         x = currentLineDistance,
