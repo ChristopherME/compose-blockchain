@@ -41,6 +41,8 @@ object Versions {
 
 object Libs {
 
+    val kotlin = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.KOTLIN_VERSION}"
+
     val androidToolsBuildGradle = "com.android.tools.build:gradle:7.0.0-beta03"
     val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10"
     val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:2.36"

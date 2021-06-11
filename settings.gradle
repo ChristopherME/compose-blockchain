@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Blockchain"
 include ':app'
+include ':core:functional-programming'
