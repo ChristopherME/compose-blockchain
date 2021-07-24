@@ -1,3 +1,6 @@
+import com.christopherelias.blockchain.buildsrc.Libs
+import com.christopherelias.blockchain.buildsrc.Core
+
 apply from: "$rootDir/common-kotlin-library.gradle"
 apply plugin: 'kotlin-kapt'
 
@@ -9,10 +12,10 @@ java {
 dependencies {
     implementation project(Core.functionalProgramming)
 
-    api Libs.squareRetrofit
-    api Libs.squareMoshi
-    api Libs.squareLoggingInterceptor
+    api Libs.Square.retrofit
+    api Libs.Square.moshi
+    api Libs.Square.loggingInterceptor
 
-    testImplementation Libs.jUnitUiTesting
-    testImplementation Libs.coroutinesTest
+    testImplementation Libs.AndroidX.Test.Ext.junit
+    testImplementation Libs.Coroutines.test
 }

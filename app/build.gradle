@@ -1,3 +1,9 @@
+import com.christopherelias.blockchain.buildsrc.Libs
+import com.christopherelias.blockchain.buildsrc.DefaultConfig
+import com.christopherelias.blockchain.buildsrc.Releases
+import com.christopherelias.blockchain.buildsrc.Modules
+import com.christopherelias.blockchain.buildsrc.Core
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -40,7 +46,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion Versions.COMPOSE_VERSION
+        kotlinCompilerExtensionVersion Libs.AndroidX.Compose.version
     }
 }
 
@@ -50,43 +56,43 @@ dependencies {
     implementation project(Core.network)
     implementation project(Modules.utils)
 
-    implementation Libs.androidXCore
-    implementation Libs.androidXAppCompat
+    implementation Libs.AndroidX.coreKtx
+    implementation Libs.AndroidX.appCompat
     implementation Libs.googleMaterial
 
-    // ViewModel
-    implementation Libs.androidXViewModel
+    // Lifecycle
+    implementation Libs.AndroidX.Lifecycle.viewModelKtx
+    implementation Libs.AndroidX.Lifecycle.runtimeKtx
 
     // Compose
-    implementation Libs.composeUi
-    implementation Libs.composeMaterial
-    implementation Libs.composeTooling
-    implementation Libs.composeRuntimeLiveData
-    implementation Libs.lifecycleRuntime
-    implementation Libs.composeActivity
+    implementation Libs.AndroidX.Compose.ui
+    implementation Libs.AndroidX.Compose.tooling
+    implementation Libs.AndroidX.Compose.material
+    implementation Libs.AndroidX.Compose.runtimeLivedata
+    implementation Libs.AndroidX.Compose.activity
 
     // Kotlin Coroutines
-    implementation Libs.coroutinesCore
-    implementation Libs.coroutinesAndroid
-    testImplementation Libs.coroutinesTest
+    implementation Libs.Coroutines.core
+    implementation Libs.Coroutines.android
+    testImplementation Libs.Coroutines.test
 
     // Timber
     implementation Libs.timber
 
     // Retrofit
-    implementation Libs.squareRetrofit
-    implementation Libs.squareMoshi
-    implementation Libs.squareLoggingInterceptor
-    testImplementation Libs.squareMockWerbServerTest
+    implementation Libs.Square.retrofit
+    implementation Libs.Square.moshi
+    implementation Libs.Square.loggingInterceptor
+    testImplementation Libs.Square.Test.mockWerbServer
 
     // DaggerHilt
-    implementation Libs.daggerHilt
-    kapt Libs.daggerHiltKapt
+    implementation Libs.Hilt.android
+    kapt Libs.Hilt.kapt
 
     // Mockk
     testImplementation Libs.mockkTesting
     testImplementation Libs.jUnit4Testing
-    androidTestImplementation Libs.jUnitUiTesting
-    androidTestImplementation Libs.espressoUiTesting
-    androidTestImplementation Libs.composeUiTesting
+    androidTestImplementation Libs.AndroidX.Test.Ext.junit
+    androidTestImplementation Libs.AndroidX.Test.espressoCore
+    androidTestImplementation Libs.AndroidX.Compose.Test.junit
 }

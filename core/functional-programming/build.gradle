@@ -1,3 +1,4 @@
+import com.christopherelias.blockchain.buildsrc.Libs
 apply from: "$rootDir/common-kotlin-library.gradle"
 apply plugin: 'kotlin-kapt'
 
@@ -7,7 +8,7 @@ java {
 }
 
 dependencies {
-    api Libs.coroutinesCore
+    api Libs.Coroutines.core
     testImplementation Libs.jUnit4Testing
-    testImplementation Libs.coroutinesTest
+    testImplementation Libs.Coroutines.test
 }

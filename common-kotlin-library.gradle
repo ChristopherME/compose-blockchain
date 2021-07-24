@@ -1,5 +1,7 @@
+import com.christopherelias.blockchain.buildsrc.Libs
+
 apply plugin: 'kotlin'
 
 dependencies {
-    implementation Libs.kotlin
+    implementation Libs.Kotlin.stdlib
 }
