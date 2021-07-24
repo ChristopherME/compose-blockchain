@@ -18,12 +18,12 @@ This project is monolithic(for now) and has only one screen. However, all inner 
 - :tests unit tests for repository, datasources, mappers, etc. I also write articles about this. [Unit Tests](https://proandroiddev.com/understanding-unit-tests-for-android-in-2021-71984f370240) & [Instrumented Tests](https://proandroiddev.com/easy-instrumented-tests-ui-tests-for-android-in-2021-2e28134ff309)
 - :app module contains our HiltApplication in charge to create the app DI graph and the interface implementations from our libraries.
 
-## App Screenshot v0.0.1
+## App Screenshot v1.0.0
 ![GitHub Cards Preview](https://github.com/ChristopherME/Blockchain/blob/master/art/screenshot.jpg)
 
 ## Development setup
 
-You require at least Android Studio Arctic Fox | 2020.3.1 Beta 3 Build #AI-203.7717.56.2031.7395685 for run this project. No API Keys required.
+You require at least Android Studio Arctic Fox | 2020.3.1 RC 1 Build #AI-203.7717.56.2031.7557721 for run this project. No API Keys required.
 
 ## Libraries
 
