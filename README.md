@@ -23,7 +23,7 @@ This project is monolithic(for now) and has only one screen. However, all inner 
 
 ## Development setup
 
-You require at least Android Studio Arctic Fox | 2020.3.1 RC 1 Build #AI-203.7717.56.2031.7557721 for run this project. No API Keys required.
+You require at least [Android Studio Arctic Fox](https://developer.android.com/studio/releases#arctic-fox) | 2020.3.1 Build #AI-203.7717.56.2031.7583922, built on July 26, 2021 for run this project. No API Keys required.
 
 ## Libraries
 

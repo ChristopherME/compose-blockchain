@@ -24,7 +24,7 @@ object Modules {
 
 object Libs {
 
-    const val androidToolsBuildGradle = "com.android.tools.build:gradle:7.0.0-rc01"
+    const val androidToolsBuildGradle = "com.android.tools.build:gradle:7.0.0"
 
     const val googleMaterial = "com.google.android.material:material:1.4.0"
 
@@ -60,7 +60,7 @@ object Libs {
         }
 
         object Compose {
-            const val version = "1.0.0-rc02"
+            const val version = "1.0.0"
             const val ui = "androidx.compose.ui:ui:$version"
             const val tooling = "androidx.compose.ui:ui-tooling:$version"
             const val material = "androidx.compose.material:material:$version"
